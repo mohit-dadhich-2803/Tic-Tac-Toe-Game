@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="friend.css" />
+  </head>
+  <body>
+    <div class="name-conatiner ">
+      <div class="namemsg hide ">
+        <p>Enter Player's Name:</p>
+      </div>
+      <div class="jklm  "><input type="text" class="inputPlayer hide " id="player1" placeholder=" Player 1 : O" /></div>
+      <div class="jklm  "><input type="text" class="inputPlayer hide " id="player2" placeholder=" Player 2 : X" /></div>
+      <button class="entername start hide  ">Start</button>
+    </div>
+      
+
+    <div class="msg hide">
+      <p class="winmsg">Winner🎉</p>
+      <div class="btn-container">
+        <button class="new-game btn2">New Game</button>
+      </div>
+    </div>
+    <div class="msgdraw hidedraw">
+      <p>Draw😮!</p>
+      <div class="btn-container">
+        <button class="new-game btn2 drawbtn">New Game</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+        <div class="box">
+          <button class="btn"></button>
+        </div>
+      </div>
+    </main>
+    <div class="btn-container">
+      <button class="reset-btn btn2 hide">Reset</button>
+    </div>
+    <script src="friend.js"></script>
+  </body>
+</html>

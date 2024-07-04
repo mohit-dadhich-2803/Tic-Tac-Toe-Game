@@ -1,0 +1,57 @@
+:root {
+    --background-color: #1E1E1E;
+    --text-color: #E0E0E0;
+    --button-background-color: #00FFFF;
+    --button-text-color: #1E1E1E;
+    --button-hover-background-color: #00B3B3;
+    --header-footer-background-color: #121212;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: var(--button-background-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+    width: 180px;
+    height: 55px; 
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+button a {
+    color: var(--button-text-color);
+    text-decoration: none;
+}
+

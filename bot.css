@@ -1,0 +1,152 @@
+:root {
+  --background-color: #1E1E1E;
+  --text-color: #E0E0E0;
+  --button-background-color: #00FFFF;
+  --button-text-color: #1E1E1E;
+  --button-hover-background-color: #00B3B3;
+  --header-footer-background-color: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color:var(--text-color);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.namemsg {
+  color: var(--button-background-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.inputPlayer {
+  width: 220px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #61dafb;
+  margin-bottom: 10px;
+}
+
+.inputPlayer:disabled {
+  opacity: 1;
+  background-color: #282c34; 
+  color: var(--button-background-color);
+  cursor: not-allowed;
+}
+
+.start {
+  padding: 14px 28px;
+  font-size: 1.4rem;
+  font-weight: 580;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: 60px;
+height: 50px;
+  
+}
+
+.start:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+  gap: 5px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #61dafb;
+  font-size: 2rem;
+  background-color: var(--button-background-color);
+  color: #282c34;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-background-color);
+  color: var(--text-color);
+}
+.btn:disabled{
+  cursor: not-allowed;
+}
+
+.msg,
+.msgdraw {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--button-background-color);
+  margin: 20px 0;
+}
+
+.winmsg {
+  margin-bottom: 20px;
+}
+
+.btn2 {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn2:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hide,
+.hidedraw {
+  display: none;
+}
